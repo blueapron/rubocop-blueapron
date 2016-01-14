@@ -1,0 +1,7 @@
+Blueapron/DateTimeNowUtc:
+  Description: 'Check that DateTime.now is interpreted as UTC.'
+  Enabled: true
+
+Blueapron/TimeNowUtc:
+  Description: 'Check that Time.now is interpreted as UTC.'
+  Enabled: true
