@@ -14,6 +14,8 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Blue Apron Style Guide RuboCop extension.}
   spec.homepage      = 'https://github.com/blueapron/rubocop-blueapron'
 
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
+
   spec.files = Dir[
     'config/*.yml',
     'lib/**/*.rb'
