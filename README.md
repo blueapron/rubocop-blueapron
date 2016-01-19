@@ -2,6 +2,8 @@
 
 Blue Apron Style Guide RuboCop extension.
 
+[![Circle CI](https://circleci.com/gh/blueapron/rubocop-blueapron.svg?style=shield)](https://circleci.com/gh/blueapron/rubocop-blueapron)
+
 ## Installation
 
 Add `rubocop-blueapron` to your `Gemfile`
@@ -17,6 +19,10 @@ Configure RuboCop to load the extension in `.rubocop.yml`.
 ```
 require: rubocop-blueapron
 ```
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 ## Contributing
 
@@ -40,5 +46,5 @@ Based on [rubocop-rspec](https://github.com/nevir/rubocop-rspec).
 
 ## License
 
-`rubocop-blueapron` is MIT licensed. [See the accompanying file](MIT-LICENSE.md) for
+`rubocop-blueapron` is MIT licensed. [See the accompanying file](LICENSE.txt) for
 the full text.
