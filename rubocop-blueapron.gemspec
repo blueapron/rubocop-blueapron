@@ -19,18 +19,15 @@ Gem::Specification.new do |spec|
     'lib/**/*.rb'
   ]
   spec.test_files = Dir['spec/**/*.rb']
-  spec.extra_rdoc_files = ['MIT-LICENSE.md', 'README.md']
+  spec.extra_rdoc_files = ['LICENSE', 'README.md']
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'rubocop'
+  spec.add_runtime_dependency 'rubocop', '~> 0.34'
 
   spec.add_development_dependency 'bundler', '~> 1.9'
-  spec.add_development_dependency 'fury'
-  spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'pry-byebug'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'rspec', '~> 3.4'
+  spec.add_development_dependency 'simplecov', '~> 0.11'
 
   if ENV['CIRCLECI']
     spec.add_development_dependency 'codeclimate-test-reporter'
