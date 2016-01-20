@@ -4,3 +4,6 @@ machine:
 dependencies:
   pre:
     - git clone --depth 1 git://github.com/bbatsov/rubocop.git vendor/rubocop
+test:
+  pre:
+    - bundle exec rubocop -D -fp -fh -o $CIRCLE_ARTIFACTS/rubocop.html
