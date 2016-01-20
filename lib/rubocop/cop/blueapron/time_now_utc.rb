@@ -4,7 +4,7 @@ module RuboCop
       class TimeNowUtc < Cop
         TIME_NOW = s(:send, s(:const, nil, :Time), :now)
 
-        MESSAGE = 'Time.now should be interpreted as UTC.'
+        MESSAGE = 'Time.now should be interpreted as UTC.'.freeze
 
         def on_send(node)
           return if node != TIME_NOW

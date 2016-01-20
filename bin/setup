@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
+
+bundle install
+
+if [ ! -d vendor/rubocop/.git ]; then
+  git clone --depth 1 git://github.com/bbatsov/rubocop.git vendor/rubocop
+fi

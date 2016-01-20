@@ -1,0 +1,26 @@
+AllCops:
+  Include:
+    - Rakefile
+  Exclude:
+    - bin/**/*
+    - vendor/bundle/**/*
+    - vendor/rubocop/**/*
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - lib/rubocop-blueapron.rb
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

@@ -4,7 +4,7 @@ module RuboCop
       class DateTimeNowUtc < Cop
         DATE_TIME_NOW = s(:send, s(:const, nil, :DateTime), :now)
 
-        MESSAGE = 'DateTime.now should be interpreted as UTC.'
+        MESSAGE = 'DateTime.now should be interpreted as UTC.'.freeze
 
         def on_send(node)
           return if node != DATE_TIME_NOW
