@@ -10,9 +10,9 @@ module RuboCop
       )
 
       def self.defaults!
+        hash = YAML.load_file(DEFAULT_FILE)
         puts "configuration from #{DEFAULT_FILE}" if ConfigLoader.debug?
-        loaded_config = ConfigLoader.load_file(DEFAULT_FILE)
-        config = ConfigLoader.merge_with_default(loaded_config, DEFAULT_FILE)
+        config = ConfigLoader.merge_with_default(hash, DEFAULT_FILE)
 
         ConfigLoader.instance_variable_set(:@default_configuration, config)
       end
