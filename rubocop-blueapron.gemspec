@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
     'lib/**/*.rb'
   ]
   spec.test_files = Dir['spec/**/*.rb']
-  spec.extra_rdoc_files = ['LICENSE', 'README.md']
+  spec.extra_rdoc_files = ['LICENSE.txt', 'README.md']
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'rubocop', '~> 0.47'
