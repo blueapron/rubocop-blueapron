@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rubocop/blueapron/version'
@@ -16,10 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
-  spec.files = Dir[
-    'config/*.yml',
-    'lib/**/*.rb'
-  ]
+  spec.files = Dir['config/*.yml', 'lib/**/*.rb']
   spec.test_files = Dir['spec/**/*.rb']
   spec.extra_rdoc_files = ['LICENSE.txt', 'README.md']
   spec.require_paths = ['lib']
