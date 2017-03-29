@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['engineering@blueapron.com']
   spec.license       = 'MIT'
 
-  spec.summary       = %q{Blue Apron Style Guide RuboCop extension.}
-  spec.description   = %q{Blue Apron Style Guide RuboCop extension.}
+  spec.summary       = 'Blue Apron Style Guide RuboCop extension.'
+  spec.description   = 'Blue Apron Style Guide RuboCop extension.'
   spec.homepage      = 'https://github.com/blueapron/rubocop-blueapron'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'

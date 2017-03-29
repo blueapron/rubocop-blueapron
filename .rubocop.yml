@@ -20,7 +20,9 @@ Style/Documentation:
 
 Style/FileName:
   Exclude:
+    - Gemfile
     - lib/rubocop-blueapron.rb
+    - rubocop-blueapron.gemspec
 
 Style/FrozenStringLiteralComment:
   Enabled: false
