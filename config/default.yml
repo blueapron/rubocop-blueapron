@@ -1,3 +1,7 @@
+require:
+  - ../lib/rubocop/cop/blueapron/date_time_now_utc.rb
+  - ../lib/rubocop/cop/blueapron/time_now_utc.rb
+
 Blueapron/DateTimeNowUtc:
   Description: 'Check that DateTime.now is interpreted as UTC.'
   Enabled: true

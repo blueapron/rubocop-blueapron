@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rubocop/blueapron/version'
@@ -10,16 +11,13 @@ Gem::Specification.new do |spec|
   spec.email         = ['engineering@blueapron.com']
   spec.license       = 'MIT'
 
-  spec.summary       = %q{Blue Apron Style Guide RuboCop extension.}
-  spec.description   = %q{Blue Apron Style Guide RuboCop extension.}
+  spec.summary       = 'Blue Apron Style Guide RuboCop extension.'
+  spec.description   = 'Blue Apron Style Guide RuboCop extension.'
   spec.homepage      = 'https://github.com/blueapron/rubocop-blueapron'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
-  spec.files = Dir[
-    'config/*.yml',
-    'lib/**/*.rb'
-  ]
+  spec.files = Dir['config/*.yml', 'lib/**/*.rb']
   spec.test_files = Dir['spec/**/*.rb']
   spec.extra_rdoc_files = ['LICENSE.txt', 'README.md']
   spec.require_paths = ['lib']
@@ -28,6 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.9'
   spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'rspec', '~> 3.4'
   spec.add_development_dependency 'simplecov', '~> 0.11'
 
