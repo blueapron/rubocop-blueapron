@@ -5,6 +5,7 @@ unless File.directory?(File.join(rubocop_path, '.git'))
   raise("Can't run specs without a local RuboCop checkout. Look in the README.")
 end
 Dir["#{rubocop_path}/spec/support/**/*.rb"].each { |f| require f }
+require 'rubocop/rspec/support'
 
 RSpec.configure do |config|
   config.order = :random
